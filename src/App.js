@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <NavbarContainer></NavbarContainer>
-      {/* <BookingInput></BookingInput> */}
+      <BookingInput></BookingInput>
       <Hotel></Hotel>
     </div>
   );

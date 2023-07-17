@@ -10,12 +10,16 @@ export default function BookingInput() {
     <div className="booking-container">
       <div className="booking-input">
         <img src={bedlogo} />
+        <input type="text" placeholder="enter your location" />
+        {/* <p>ENTER-YOUR-LOCATION</p> */}
       </div>
       <div className="booking-input">
         <img src={calenderlogo} />
+        <input type="date" placeholder="check in date" />
       </div>
       <div className="booking-input">
         <img src={peoplelogo} />
+        <input type="text" placeholder="number of person" />
       </div>
       <button>Search</button>
     </div>

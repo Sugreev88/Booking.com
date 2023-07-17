@@ -101,3 +101,13 @@
   border-radius: 10px;
   cursor: pointer;
 }
+
+button {
+  margin-top: 10px;
+  height: 28px;
+  /* width: 50px; */
+  margin-left: 30px;
+  background-color: #003580;
+  color: white;
+  font-weight: bold;
+}

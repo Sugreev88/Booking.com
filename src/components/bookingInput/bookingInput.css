@@ -15,11 +15,15 @@
 .booking-input {
   /* width: %; */
   border-right: 5px solid gold;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  /* border-color: white; */
 }
 
 .booking-container button {
   background-color: #0071c2;
-  height: 95%;
+  height: 99%;
+  margin: 0;
   font-size: large;
   font-weight: bolder;
   color: white;
@@ -31,4 +35,9 @@
 
 .booking-container button:hover {
   background-color: #003580;
+}
+
+.booking-input input {
+  /* border-color: yellow; */
+  border: 1px solid white;
 }
