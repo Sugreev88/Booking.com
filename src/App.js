@@ -47,7 +47,7 @@ const data = [
     img: "https://cf.bstatic.com/xdata/images/hotel/square600/454730064.jpg?k=2de790a800723fcf6e84cd8214022e2df7456680279e2f8618804edcd73624e5&o=",
     name: "Mauli Aksh",
     location: "Ajmer,rajasthan",
-    rating: 2,
+    rating: 5,
     roomsLeft: 8,
     review: 200,
   },
@@ -67,10 +67,12 @@ function App() {
   const [filteredData, setFilteredData] = useState(data);
 
   const filterHotels = (minReview) => {
-    const filteredHotels = hotelData.filter((hotel) => hotel.rat >= minReview);
+    const filteredHotels = hotelData.filter(
+      (hotel) => hotel.rating >= minReview
+    );
     setFilteredData(filteredHotels);
-    console.log(filteredHotels);
-    console.log(minReview);
+    // console.log(filteredHotels);
+    // console.log(minReview);
   };
   // console.log(data[0].review);
   return (
