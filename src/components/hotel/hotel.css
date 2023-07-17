@@ -1,0 +1,62 @@
+.hotel-container {
+  border: 2px solid red;
+  width: 70%;
+  margin: 20px auto;
+  height: 250px;
+  /* display: flex; */
+  /* grid-template-rows: 1fr 1fr; */
+  /* flex-direction: column; */
+}
+
+.hotel-container img {
+  width: 30%;
+  height: 90%;
+  margin: 10px;
+}
+
+.second-container h1 {
+  margin-bottom: 0;
+  font-size: 25px;
+}
+
+/* .head {
+  border: 2px solid red;
+  width: 30%;
+  height: 50%;
+} */
+
+.second-container {
+  border: 2px solid red;
+  width: 30%;
+  height: 250px;
+}
+
+.in-sec {
+  /* border: 2px solid red; */
+  /* width: 99%; */
+  /* height: 50%; */
+}
+
+.in-sec-1 {
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: 1.3fr 0.8fr 1fr;
+  /* width: 33%; */
+}
+
+.in-sec-1 a {
+  width: 100%;
+  border: 2px solid red;
+  font-size: 15px;
+  margin: 0;
+}
+
+.in-sec-1 p {
+  width: 100%;
+  margin: 0;
+}
+
+#lo-head {
+  margin: 0;
+  display: inline;
+}
