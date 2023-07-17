@@ -1,0 +1,23 @@
+.filter-container {
+  /* border: 2px solid red; */
+  width: 20%;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+.filter-container input {
+  width: 60%;
+  height: 40px;
+  border-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.filter-container button {
+  width: 37%;
+  margin: 0;
+  height: 44px;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}

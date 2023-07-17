@@ -1,23 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./hotel.css";
 import leaf from "./leaf.png";
 import star from "./star1.png";
 
-export default function Hotel() {
+export default function Hotel(props) {
+  // const { data } = props;
+  // console.log(data[0].name);
+  // console.log(props.hoteldata);
+  // console.log(hoteldata);
+  // const data = hoteldata;
+  // console.log(data.name);
+  // console.log(props.data.name);
   return (
     <>
       <div className="container">
         <div className="hotel-container">
-          <img src="https://cf.bstatic.com/xdata/images/hotel/square600/476026226.webp?k=d25bd158fbbd3a0fb145c6a9983485a7318e33c20983a52321adbb7a0d58de8c&o=" />
+          <img src={props.data.img} />
         </div>
         <div className="second-container">
           <div className="in-sec">
             <h1>
-              Hotel Sai Pritam <img src={star} />
+              {props.data.name} <img src={star} />
             </h1>
             <div className="in-sec-1">
               <a href="#" className="n">
-                Central Suburbs,Mumbai
+                {props.data.location}
               </a>
               <a href="#" className="n">
                 Show on map
@@ -35,7 +42,10 @@ export default function Hotel() {
                 <p>2 single beds</p>
                 <p className="n4">FREE cancellation</p>
                 <p className="n4">No prepayment needed – pay at the property</p>
-                <p className="n5">Only 1 room left at this price on our site</p>
+                <p className="n5">
+                  Only {props.data.roomsLeft} room left at this price on our
+                  site
+                </p>
               </div>
             </div>
           </div>
@@ -43,9 +53,9 @@ export default function Hotel() {
         <div className="third-container">
           <div id="n8">
             <h3>Exceptional</h3>
-            <p>3.5</p>
+            <p>{props.data.rating}</p>
           </div>
-          <p id="n9">11 reviews</p>
+          <p id="n9">{props.data.review} reviews</p>
           <p id="n10">Location 9.5</p>
           <p id="n11">New to Booking.Com</p>
           <p>2 nights, 2 adults</p>

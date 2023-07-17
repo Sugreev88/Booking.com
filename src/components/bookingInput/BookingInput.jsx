@@ -4,6 +4,7 @@ import "./bookingInput.css";
 import bedlogo from "./bedlogo.png";
 import calenderlogo from "./calender.png";
 import peoplelogo from "./people.png";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 export default function BookingInput() {
   return (
@@ -21,7 +22,11 @@ export default function BookingInput() {
         <img src={peoplelogo} />
         <input type="text" placeholder="number of person" />
       </div>
-      <button>Search</button>
+      <button>
+        <Link id="m1" to="/search">
+          Search
+        </Link>
+      </button>
     </div>
   );
 }

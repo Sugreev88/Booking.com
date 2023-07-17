@@ -1,6 +1,5 @@
 import React from "react";
-import "./navbarcontainer.css";
-import "./navbarcontainer2.css";
+import "./navbar.css";
 
 export default function NavbarContainer() {
   return (
