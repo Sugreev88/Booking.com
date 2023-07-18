@@ -81,13 +81,19 @@ function App() {
       <Router>
         <NavbarContainer></NavbarContainer>
         <BookingInput></BookingInput>
-        <FilterComponent filterHotels={filterHotels} />
         <Routes>
           <Route
             path="/search"
-            element={filteredData.map((hotel) => (
-              <Hotel key={hotel.id} data={hotel} />
-            ))}
+            element={
+              <>
+                {filteredData.length > 0 && (
+                  <FilterComponent filterHotels={filterHotels} />
+                )}
+                {filteredData.map((hotel) => (
+                  <Hotel key={hotel.id} data={hotel} />
+                ))}
+              </>
+            }
           />
         </Routes>
       </Router>
